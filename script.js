@@ -1,11 +1,13 @@
 
 const background = document.getElementById("hero_background");
 const header = document.getElementById("header")
+const timeUpdateBackground = 30
+
 
 let backgroundId = 1
 
 window.onload = function() {
-    setInterval(change_background, 30*1000)
+    setInterval(change_background, timeUpdateBackground*1000)
 }
 
 function change_background() {
