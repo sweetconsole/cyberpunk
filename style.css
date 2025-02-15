@@ -142,89 +142,6 @@ button {
     left: 0;
     right: 0;
 }
-.footer {
-
-}
-
-.footer__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 40px 0;
-
-    @media(max-width: 952px) {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-}
-
-.footer__logos {
-    width: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-
-    @media(max-width: 952px) {
-        width: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-}
-
-.footer__logo_cyberpunk {
-    width: 296px;
-    height: 74px;
-
-    @media(max-width: 952px) {
-        margin-bottom: 25px;
-    }
-}
-
-.footer__logo_cd_project {
-    width: 172px;
-    height: 74px;
-
-    @media(max-width: 952px) {
-        margin-bottom: 25px;
-    }
-}
-
-.footer__link {
-    font-size: 18px;
-    line-height: 21px;
-
-    @media(max-width: 952px) {
-        margin-top: 30px;
-    }
-}
-
-.footer__copyright {
-    padding: 13px 0;
-    color: white;
-    background-color: black;
-}
-
-.footer__copyright_text {
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-}
 
 .buy {
     display: -webkit-box;
@@ -364,6 +281,89 @@ button {
     cursor: pointer;
 }
 
+.footer {
+
+}
+
+.footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0;
+
+    @media(max-width: 952px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+.footer__logos {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    @media(max-width: 952px) {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+.footer__logo_cyberpunk {
+    width: 296px;
+    height: 74px;
+
+    @media(max-width: 952px) {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__logo_cd_project {
+    width: 172px;
+    height: 74px;
+
+    @media(max-width: 952px) {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__link {
+    font-size: 18px;
+    line-height: 21px;
+
+    @media(max-width: 952px) {
+        margin-top: 30px;
+    }
+}
+
+.footer__copyright {
+    padding: 13px 0;
+    color: white;
+    background-color: black;
+}
+
+.footer__copyright_text {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
 .header {
     height: 100px;
     position: sticky;
@@ -942,7 +942,7 @@ button {
     font-weight: 700;
     color: #FFFFFF;
     border: none;
-    background: none;
+    background: none !important;
     border-bottom: 2px solid #777777;
     margin-bottom: 20px;
 }
@@ -987,6 +987,7 @@ button {
     border: var(--color-accent-1);
     background-color: var(--color-accent-1);
     margin-top: 15px;
+    margin-bottom: 15px;
     padding: 15px 50px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -995,6 +996,59 @@ button {
 .stock__form_button:hover {
     color: var(--color-accent-1);
     background-color: black;
+}
+
+.stock__form_checkbox {
+    position: relative;
+}
+
+.stock__form_checkbox_label {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.stock__form_checkbox_input {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    width: 14px;
+    height: 14px;
+}
+
+.stock__form_checkbox_input+label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.stock__form_checkbox_input+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    border: 1px solid #777777;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    padding-bottom: 3px;
+}
+
+.stock__form_checkbox_input:checked+label::before {
+    background-image: url("./image/check.svg");
 }
 
 .stock__image {
