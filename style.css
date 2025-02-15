@@ -142,6 +142,89 @@ button {
     left: 0;
     right: 0;
 }
+.footer {
+
+}
+
+.footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0;
+
+    @media(max-width: 952px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+.footer__logos {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    @media(max-width: 952px) {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+.footer__logo_cyberpunk {
+    width: 296px;
+    height: 74px;
+
+    @media(max-width: 952px) {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__logo_cd_project {
+    width: 172px;
+    height: 74px;
+
+    @media(max-width: 952px) {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__link {
+    font-size: 18px;
+    line-height: 21px;
+
+    @media(max-width: 952px) {
+        margin-top: 30px;
+    }
+}
+
+.footer__copyright {
+    padding: 13px 0;
+    color: white;
+    background-color: black;
+}
+
+.footer__copyright_text {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
 
 .buy {
     display: -webkit-box;
@@ -152,6 +235,10 @@ button {
             align-items: center;
     background-color: black;
     color: white;
+
+    @media(max-width: 1300px) {
+        display: block;
+    }
 }
 
 .buy__image {
@@ -163,11 +250,24 @@ button {
     @media(max-width: 1300px) {
         width: 332px;
     }
+
+    @media(max-width: 952px) {
+        width: 100%;
+        height: 350px;
+    }
 }
 
 .buy__info {
     width: 625px;
     margin-left: 32px;
+
+    @media(max-width: 1300px) {
+        width: 296px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+
 }
 
 .buy__info_title {
@@ -176,6 +276,12 @@ button {
     font-size: 62px;
     line-height: 79px;
     margin-bottom: 25px;
+
+    @media(max-width: 952px) {
+        font-size: 30px;
+        line-height: 35px;
+        margin-top: 25px;
+    }
 }
 
 .buy__packages_title {
@@ -184,6 +290,10 @@ button {
 
 .buy__packages {
     margin-bottom: 60px;
+
+    @media(max-width: 952px) {
+        margin-bottom: 30px;
+    }
 }
 
 .buy__package {
@@ -208,6 +318,10 @@ button {
 
 .buy__platforms_title {
     margin-bottom: -25px;
+
+    @media(max-width: 952px) {
+        margin-bottom: -20px;
+    }
 }
 
 .buy__platforms {
@@ -220,6 +334,10 @@ button {
             justify-content: space-between;
     margin-top: 50px;
     color: var(--color-accent-1);
+
+    @media(max-width: 952px) {
+        width: 100%;
+    }
 }
 
 .buy__platform_pc {
@@ -246,62 +364,6 @@ button {
     cursor: pointer;
 }
 
-.footer {
-
-}
-
-.footer__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 13px 0;
-}
-
-.footer__logos {
-    width: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.footer__logo_cyberpunk {
-    width: 296px;
-    height: 74px;
-}
-
-.footer__logo_cd_project {
-    width: 172px;
-    height: 74px;
-}
-
-.footer__link {
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.footer__copyright {
-    padding: 13px 0;
-    color: white;
-    background-color: black;
-}
-
-.footer__copyright_text {
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-}
 .header {
     height: 100px;
     position: sticky;
@@ -370,7 +432,7 @@ button {
     }
 }
 
-.header__socials_link {
+.header__socials_icon {
     width: 30px;
     height: 30px;
 
@@ -503,6 +565,11 @@ button {
         width: 460px;
         height: 317px;
     }
+
+    @media(max-width: 952px) {
+        width: 100%;
+        height: 204px;
+    }
 }
 
 .monitor__collaboration {
@@ -523,6 +590,20 @@ button {
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+
+    @media(max-width: 1300px) {
+        width: 100%;
+    }
+
+    @media(max-width: 952px) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
 }
 
 .monitor__collaboration_hp {
@@ -531,6 +612,12 @@ button {
 
     @media(max-width: 1300px) {
         margin-bottom: 25px;
+    }
+
+    @media(max-width: 952px) {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 0;
     }
 }
 
@@ -541,11 +628,22 @@ button {
     @media(max-width: 1300px) {
         margin-bottom: 25px;
     }
+
+    @media(max-width: 952px) {
+        width: 50px;
+        height: 10px;
+        margin-bottom: 0;
+    }
 }
 
 .monitor__collaboration_cyberpunk {
     width: 320px;
     height: 80px;
+
+    @media(max-width: 952px) {
+        width: 175px;
+        height: 44px;
+    }
 }
 
 .monitor__info {
@@ -553,6 +651,10 @@ button {
 
     @media(max-width: 1300px) {
         width: 460px;
+    }
+
+    @media(max-width: 952px) {
+        width: 100%;
     }
 }
 
@@ -562,6 +664,12 @@ button {
     font-size: 62px;
     line-height: 79px;
     margin-bottom: 25px;
+
+    @media(max-width: 952px) {
+        font-size: 30px;
+        line-height: 35px;
+        margin-top: 40px;
+    }
 }
 
 .monitor__info_description {
@@ -695,6 +803,13 @@ button {
 .screenshots__block_left_image {
     width: 460px;
     height: 196px;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+    @media (max-width: 952px) {
+        width: 320px;
+        height: 196px;
+    }
 }
 
 .screenshots__block_left_image:first-child {
@@ -736,6 +851,10 @@ button {
 
     @media(max-width: 1300px) {
         width: 460px;
+    }
+
+    @media(max-width: 952px) {
+        width: 100%;
     }
 }
 
@@ -811,6 +930,10 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 75px;
+
+    @media(max-width: 952px) {
+        width: 100%;
+    }
 }
 
 .stock__form_input {
@@ -889,6 +1012,13 @@ button {
         top: 20px;
         right: 0;
     }
+
+    @media (max-width: 952px) {
+        width: 132px;
+        height: 130px;
+        top: 55px;
+        left: 0;
+    }
 }
 
 .stock__image_2 {
@@ -898,6 +1028,13 @@ button {
 
     @media(max-width: 1300px) {
         top: 425px;
+        right: 0;
+    }
+
+    @media (max-width: 952px) {
+        width: 132px;
+        height: 130px;
+        top: 55px;
         right: 0;
     }
 }
