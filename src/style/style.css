@@ -1,0 +1,101 @@
+
+:root {
+    color-scheme: only light;
+
+    --color-accent-1: #fcee0a;
+    --color-accent-2: #00f0ff;
+}
+
+*::selection {
+    color: black;
+    background-color: var(--color-accent-2);
+}
+
+body {
+    font-family: "Roboto", serif;
+    color: black;
+    font-weight: 400;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    
+    @media (max-width: 1300px) {
+        max-width: 952px;
+    }
+
+    @media (max-width: 952px) {
+        max-width: 296px;
+    }
+}
+
+.highlighting {
+    font-weight: 700;
+    color: var(--color-accent-2);
+}
+
+.hero {
+    margin-top: -100px;
+    height: 100vh;
+    position: relative;
+    transition: all 1s ease-in-out;
+    background-position: center;
+    background-image: url("./image/background_1.webp");
+
+    @media (max-width: 952px) {
+        margin-top: -105px;
+    }
+}
+
+.hero_background_1 {
+    background-image: url("./image/background_1.webp");
+}
+
+.hero_background_2 {
+    background-image: url("./image/background_2.webp");
+}
+
+.hero_background_3 {
+    background-image: url("./image/background_3.webp");
+}
+
+.cross__section {
+    clip-path: polygon(
+            0% 50px,
+            50px 0%,
+            100% 0%,
+            100% 0,
+            100% calc(100% - 50px),
+            calc(100% - 50px) 100%,
+            0 100%,
+            0 0
+    );
+}
+
+.shadow {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+}
+
+.shadow__bottom {
+    background-image: url("./image/shadow_1.webp");
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.shadow__top {
+    background-image: url("./image/shadow_2.webp");
+    top: 0;
+    left: 0;
+    right: 0;
+}

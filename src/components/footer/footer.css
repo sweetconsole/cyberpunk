@@ -1,0 +1,65 @@
+.footer {
+
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+
+    @media(max-width: 952px) {
+        flex-direction: column;
+    }
+}
+
+.footer__logos {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 952px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.footer__logo_cyberpunk {
+    width: 296px;
+    height: 74px;
+
+    @media(max-width: 952px) {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__logo_cd_project {
+    width: 172px;
+    height: 74px;
+
+    @media(max-width: 952px) {
+        margin-bottom: 25px;
+    }
+}
+
+.footer__link {
+    font-size: 18px;
+    line-height: 21px;
+
+    @media(max-width: 952px) {
+        margin-top: 30px;
+    }
+}
+
+.footer__copyright {
+    padding: 13px 0;
+    color: white;
+    background-color: black;
+}
+
+.footer__copyright_text {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
