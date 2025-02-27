@@ -30,4 +30,4 @@ gulp server
 
 ## Внешний вид верстки сайта
 
-<img src="https://i.ibb.co/1f5p973g/sweetconsole-github-io-cyberpunk-dist.png" alt="Изобржанение вертски сайта" />
+<img src="https://i.ibb.co/YBJqvMhw/sweetconsole-github-io-cyberpunk-dist.png" alt="Изобржанение вертски сайта" />
